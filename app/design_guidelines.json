@@ -1,0 +1,246 @@
+{
+  "theme": "light_with_tv_high_contrast",
+  "project_name": "HMV - Hospital Municipal Valparaíso",
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans Variable, sans-serif",
+    "font_family_body": "DM Sans Variable, sans-serif",
+    "font_family_mono": "IBM Plex Mono, monospace",
+    "font_import": "@import \"@fontsource-variable/plus-jakarta-sans\";\n@import \"@fontsource-variable/dm-sans\";\n@import \"@fontsource/ibm-plex-mono\";",
+    "scale_px": {
+      "display": 56,
+      "h1": 40,
+      "h2": 30,
+      "h3": 24,
+      "h4": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "font-bold tracking-tight text-slate-900 leading-tight",
+      "tv_ticket_giant": "font-black tracking-tight text-teal-950 font-mono text-6xl md:text-8xl lg:text-9xl",
+      "tv_room_giant": "font-extrabold tracking-tight text-teal-800 text-3xl md:text-5xl lg:text-6xl",
+      "labels": "uppercase text-xs font-semibold tracking-wider text-slate-500",
+      "body": "text-slate-700 leading-relaxed font-normal text-base"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F1F5F9",
+        "on_bg": "#1E293B",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#0E7490",
+          "error": "#B91C1C",
+          "success": "#15803D",
+          "warning": "#B45309"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#E2E8F0",
+          "hover": "#F8FAFC"
+        }
+      },
+      {
+        "name": "brand_header",
+        "kind": "solid",
+        "bg": "#155E75",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#E0F2FE",
+        "roles": {
+          "badge_bg": "#0891B2",
+          "badge_text": "#FFFFFF"
+        }
+      },
+      {
+        "name": "sidebar_dark",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "active_item_bg": "#155E75",
+          "active_item_text": "#FFFFFF",
+          "hover_bg": "#1E293B"
+        }
+      },
+      {
+        "name": "tv_screen_display",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#334155",
+        "roles": {
+          "active_call_card_bg": "#FFFFFF",
+          "active_call_highlight_border": "#0284C7",
+          "header_bg": "#0F766E",
+          "header_text": "#FFFFFF",
+          "recent_calls_header": "#0891B2"
+        }
+      },
+      {
+        "name": "tv_active_call_banner",
+        "kind": "solid",
+        "bg": "#E0F2FE",
+        "on_bg": "#082F49",
+        "on_bg_muted": "#0369A1",
+        "roles": {
+          "ticket_badge_bg": "#0284C7",
+          "ticket_badge_text": "#FFFFFF"
+        }
+      },
+      {
+        "name": "status_badge_available",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#166534",
+        "on_bg_muted": "#15803D"
+      },
+      {
+        "name": "status_badge_busy",
+        "kind": "solid",
+        "bg": "#FEE2E2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#B91C1C"
+      },
+      {
+        "name": "status_badge_waiting",
+        "kind": "solid",
+        "bg": "#FEF3C7",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#B45309"
+      }
+    ],
+    "palette": {
+      "primary_petroleum_blue": "#155E75",
+      "primary_hover": "#0E7490",
+      "primary_active": "#164E63",
+      "light_blue_bg": "#E0F2FE",
+      "light_blue_accent": "#BAE6FD",
+      "pure_white": "#FFFFFF",
+      "gray_background": "#F1F5F9",
+      "gray_card_border": "#E2E8F0",
+      "gray_dark_text": "#334155",
+      "green_success": "#16A34A",
+      "green_badge_bg": "#DCFCE7",
+      "red_alert": "#DC2626",
+      "red_badge_bg": "#FEE2E2",
+      "amber_warning": "#D97706",
+      "amber_badge_bg": "#FEF3C7"
+    },
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF"
+  },
+  "entry_surfaces": {
+    "/login": "split login — left brand panel with HMV identity and emergency medical visual, right clean login form with role switcher and password toggle",
+    "/": "dashboard hospitalar — dark navy sidebar, light gray background, stats cards on top, real-time consultation rooms grid, quick call bar, and waitlist queue",
+    "/tv": "modo TV tela cheia — split display: dominant live calling hero left (ticket, patient name, room, doctor, pulse animation, sound alert) and recent calls table right with live clock and ticker"
+  },
+  "layouts_and_grids": {
+    "dashboard_layout": {
+      "sidebar_width": "w-64 shrink-0 fixed left-0 top-0 bottom-0 z-30 bg-slate-900 text-slate-100 flex flex-col justify-between border-r border-slate-800",
+      "main_content": "pl-64 min-h-screen bg-slate-100 flex flex-col",
+      "top_header": "h-16 px-6 bg-white border-b border-slate-200 flex items-center justify-between sticky top-0 z-20 shadow-xs",
+      "stats_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-6",
+      "middle_split": "grid grid-cols-1 lg:grid-cols-12 gap-6 px-6 pb-6",
+      "quick_call_section": "lg:col-span-4 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm",
+      "rooms_status_section": "lg:col-span-8 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm",
+      "queue_table_section": "col-span-12 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
+    },
+    "tv_display_layout": {
+      "container": "min-h-screen w-screen bg-slate-900 text-slate-50 flex flex-col overflow-hidden select-none",
+      "tv_header": "h-20 bg-teal-800 px-8 flex items-center justify-between border-b-4 border-cyan-400 shadow-md",
+      "tv_body": "flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 p-6 overflow-hidden",
+      "tv_current_call_hero": "lg:col-span-7 bg-white text-slate-900 rounded-3xl p-8 border-4 border-cyan-500 shadow-2xl flex flex-col justify-between relative overflow-hidden",
+      "tv_recent_calls_panel": "lg:col-span-5 bg-slate-800/90 rounded-3xl p-6 border border-slate-700 shadow-xl flex flex-col",
+      "tv_footer_ticker": "h-14 bg-slate-950 text-cyan-300 px-8 flex items-center justify-between text-sm md:text-base border-t border-slate-800"
+    }
+  },
+  "visual_enhancers": {
+    "card_style": "bg-white rounded-2xl border border-slate-200/80 shadow-[0_2px_8px_rgba(15,23,42,0.06)] hover:shadow-[0_6px_16px_rgba(15,23,42,0.08)] transition-all duration-200",
+    "call_flash_animation": "animate-pulse ring-8 ring-cyan-400 ring-offset-4 duration-700",
+    "status_pill_available": "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200",
+    "status_pill_busy": "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-800 border border-rose-200",
+    "status_pill_waiting": "inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-200",
+    "ticket_badge": "font-mono font-bold px-3 py-1 bg-cyan-100 text-cyan-900 border border-cyan-300 rounded-lg text-sm"
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "y": 8 },
+      "animate": { "opacity": 1, "y": 0 },
+      "transition": { "duration": 0.25, "ease": "easeOut" }
+    },
+    "tv_new_call_animation": {
+      "scale_in": "scale-[1.03] transition-transform duration-300",
+      "glow_effect": "drop-shadow-[0_0_25px_rgba(6,182,212,0.6)]"
+    },
+    "interactive_hover": "transition-colors duration-150 ease-in-out"
+  },
+  "accessibility": {
+    "wcag_compliance": "AA (minimum 4.5:1 text contrast for all primary and muted elements)",
+    "screen_reader": "Aria attributes on live call banner (`aria-live=\"assertive\"`), dynamic polling indicators, and form field helper texts",
+    "tv_speech_synth": "Web Speech API (`window.speechSynthesis`) speaking in pt-BR: 'Senha [A101], [Nome do Paciente], dirigir-se ao [Consultório 03]'",
+    "audio_bip": "Web Audio API synthetic chime before announcement so no external audio file 404 occurs",
+    "data_testid_policy": "All buttons, inputs, table rows, cards, and modal triggers must have unambiguous data-testid attributes"
+  },
+  "image_urls": {
+    "login_hero_hospital": {
+      "url": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob3NwaXRhbCUyMG1lZGljYWwlMjBkb2N0b3JzfGVufDB8fHx8MTc4OTI0MDY3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Médico profissional com jaleco branco e estetoscópio para o painel de boas-vindas do login HMV",
+      "category": "auth_cover"
+    },
+    "doctors_team": {
+      "url": "https://images.unsplash.com/photo-1504813184591-01572f98c85f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBob3NwaXRhbCUyMG1lZGljYWwlMjBkb2N0b3JzfGVufDB8fHx8MTc4OTI0MDY3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Equipe médica e corpo clínico hospitalar",
+      "category": "team_medical"
+    },
+    "doctor_avatar_default": {
+      "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzR8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBob3NwaXRhbCUyMG1lZGljYWwlMjBkb2N0b3JzfGVufDB8fHx8MTc4OTI0MDY3MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Foto de perfil de médico para os cards de consultório",
+      "category": "doctor_avatar"
+    }
+  },
+  "component_paths": {
+    "app_shell": "/app/frontend/src/App.tsx",
+    "css_entry": "/app/frontend/src/index.css",
+    "login_page": "/app/frontend/src/pages/Login.tsx",
+    "dashboard_page": "/app/frontend/src/pages/Dashboard.tsx",
+    "tv_page": "/app/frontend/src/pages/TVCalling.tsx",
+    "patients_page": "/app/frontend/src/pages/Patients.tsx",
+    "rooms_page": "/app/frontend/src/pages/Rooms.tsx",
+    "new_call_modal_or_page": "/app/frontend/src/pages/NewCall.tsx",
+    "attendances_page": "/app/frontend/src/pages/Attendances.tsx",
+    "reports_page": "/app/frontend/src/pages/Reports.tsx",
+    "settings_page": "/app/frontend/src/pages/Settings.tsx",
+    "sidebar_component": "/app/frontend/src/components/Sidebar.tsx",
+    "header_component": "/app/frontend/src/components/Header.tsx",
+    "call_announcer_service": "/app/frontend/src/lib/audioAnnounce.ts"
+  },
+  "instructions_to_main_agent": [
+    "1. PALETA DE CORES: Aplique rigorosamente a paleta do HMV solicitada: Azul Petróleo (#155E75) no topo e botões de destaque primário, Fundo Cinza Claro (#F1F5F9), Cartões em Branco Puro (#FFFFFF) com bordas suaves (#E2E8F0), Azul Claro (#E0F2FE) para chamadas ativas e destaques, Verde (#16A34A) para status Disponível/Concluído e Vermelho (#DC2626) para Ocupado/Urgência.",
+    "2. LOGO E CABEÇALHO: Destaque a sigla 'HMV' em bold teal acompanhada do subtítulo 'Hospital Municipal Valparaíso' com ícone de cruz médica estilizada.",
+    "3. TELA DE LOGIN (/login): Permita escolher ou alternar facilmente entre perfis demo (Administrador, Recepção, Enfermagem, Médico) para testes rápidos sem atrito, com botão de alternar visibilidade da senha e mensagens de erro amigáveis.",
+    "4. TELA DA TV DE CHAMADA (/tv): Rota dedicada e pública (não exige login ou pode ser aberta em monitor separado). Deve suportar modo Tela Cheia (F11 / botão fullscreen), exibir em tamanho GIGANTE o paciente atual, senha (ex: A042) e consultório (ex: Consultório 02 - Dr. Carlos), com animação de destaque por flash/pulso luminoso, sino/bip sonoro via Web Audio API e síntese de voz (Web Speech API pt-BR) que fala a senha chamada. Ao lado direito, exibir tabela grande com histórico das últimas 5 chamadas (Senha | Consultório | Horário). Rodapé com relógio ao vivo e mensagens institucionais.",
+    "5. CADASTRO DE PACIENTES (/patients): Tabela completa com filtros de busca (nome/CPF/cartão SUS), paginação, modal de cadastro/edição, exclusão e geração direta de senha de atendimento (Normal 'N', Preferencial 'P', Urgência 'U'). Forneça dados fictícios ricos e realistas já no seed.",
+    "6. GESTÃO DE CHAMADAS (/calls ou painel rápido): Capacidade de chamar paciente da fila, repetir chamada, transferir para consultório ou finalizar atendimento com cálculo de tempo de espera.",
+    "7. CONSULTÓRIOS (/rooms): Painel visual com cards de consultórios (Consultório 01 a 08, Sala de Triagem, etc.) mostrando estado Disponível (Verde) / Em Atendimento (Vermelho/Laranja), médico atual e paciente em atendimento.",
+    "8. RELATÓRIOS (/reports): Gráficos modernos com Recharts: Atendimentos por hora/dia, tempo médio de espera, distribuição por especialidade/consultório e exportação/visualização tabular.",
+    "9. CONFIGURAÇÕES (/settings): Opção para ocultar nome completo do paciente na TV (LGPD / Privacidade, mostrando apenas iniciais ou só senha), volume da voz, e gerenciamento de usuários.",
+    "10. DADOS FICTÍCIOS E SEED: Preencher banco MongoDB com pacientes realistas brasileiros, consultórios, histórico de chamadas do dia e médicos com CRM."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Evite 'AI slop' genérico; construa uma interface hospitalar elegante, limpa e moderna com hierarquia visual clara e espaçamento generoso.",
+    "Use Tailwind v4 com `@theme` tokens no index.css. Não use transições globais universais.",
+    "Adicione `data-testid` em todos os botões, inputs, abas, links de menu e cards importantes para testes automatizados.",
+    "Garanta que a TV de chamada utilize polling periódico de 2 segundos (ou SSE/WebSocket) para atualizar em tempo real sem recarregar a página.",
+    "Utilize os componentes de `@/components/ui/` do template (Sonner para toasts, Dialog para modais, Select customizado, Table com responsividade horizontal)."
+  ]
+}
